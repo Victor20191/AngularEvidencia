@@ -1,0 +1,6 @@
+<h1>Hola {{nombre}}, Bienvenido al analizador de números capicua</h1>
+<div>
+  <label for="numero">Ingrese un número:</label>
+  <input type="text" id="numero" placeholder="Ingresa un número" [(ngModel)]="numero" (ngModelChange)="validateNumber()"/>
+</div>
+<p *ngIf="mensaje">{{ mensaje }}</p>
